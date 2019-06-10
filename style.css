@@ -24,14 +24,17 @@ header p, header h1{
 	color: #fff;
 }
 
-header p {
+p {
 	font-size: 14pt;
 	margin-bottom: 0.5vh;
 }
 
+h1 {
+	margin-bottom: 8vh;
+}
+
 section h1 {
 	color: #1F2A2C;
-	margin-bottom: 8vh;
 }
 
 .project {
@@ -72,8 +75,10 @@ a:hover {
 
 footer {
 	background-color: #1F2A2C; 
-	height: 10vh;
+	height: 25vh;
 	margin-top: 15vh;
+	padding-top: 10vh;
+	color: #fff;
 }
 
 
