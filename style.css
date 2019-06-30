@@ -13,7 +13,6 @@
 	height: 100vh;
 	/* background: url(img/palmy_derevia_vid_snizu_134823_3840x2400.jpg) no-repeat;  */
 	background: url(Img/palmy_derevya_nebo_116038_1920x1080.jpg) no-repeat;
-
 	background-size: cover;
 	background-position: center right;
 	opacity: .8;
@@ -64,13 +63,10 @@ section h1 {
 .project {
 	display: flex;
 	justify-content: center;
-	/* flex-direction: column; */
-	/* align-items: center; */
 	background-color: #716F7C;
 	padding: 1em;
 	border-radius: 1.5em;
 	color: #fff;
-	/* width: 50vw; */
 	margin: 2em 0;
 
 }
@@ -126,9 +122,19 @@ a:hover {
 }
 
 footer {
-	background-color: #1F2A2C; 
-	height: 25vh;
 	color: #fff;
+}
+
+footer > div > div {
+	display: flex; 
+	width: 25%;
+	justify-content: space-around;
+	padding: 0 0 1em 0;
+}
+
+.logo {
+	width: 4em;
+	height: 4em;
 }
 
 @media (max-width: 449px) {
@@ -145,6 +151,5 @@ footer {
 		display: inline;
 	}
 }
-]
 
 
