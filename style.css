@@ -3,13 +3,27 @@
 	padding: 0;
 	font-family: Arial, sent-serif; 
 	text-align: center;
+	opacity: .99;
+	box-sizing: border-box;
+}
+
+.background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	/* background: url(img/palmy_derevia_vid_snizu_134823_3840x2400.jpg) no-repeat;  */
+	background: url(Img/palmy_derevya_nebo_116038_1920x1080.jpg) no-repeat;
+
+	background-size: cover;
+	background-position: center right;
+	opacity: .8;
 }
 
 header {
 	display: flex;
 	background-color: #1F2A2C; 
 	height: 100vh;
-	margin-bottom: 10vh;
+	opacity: .95;
 }
 
 .container {
@@ -26,39 +40,72 @@ header p, header h1{
 }
 
 p {
-	font-size: 14pt;
-	margin-bottom: 0.5vh;
+	font-size: 1.5em;
+	margin-bottom: .2em;
 }
 
-h1 {
-	margin-bottom: 8vh;
+section {
+ min-height: 100vh;
 }
 
 section h1 {
-	color: #1F2A2C;
+	color: #fff;
+	font-size: 2em;
+	padding: 1.9em 0 1em 0;
+}
+
+.projects{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
 
 .project {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+	/* flex-direction: column; */
+	/* align-items: center; */
 	background-color: #716F7C;
-	padding: 2vh;
-	border-radius: 2vh;
+	padding: 1em;
+	border-radius: 1.5em;
 	color: #fff;
+	/* width: 50vw; */
+	margin: 2em 0;
 
 }
 
-.project h3 {
-	margin-bottom: 1vh;
+.project > h3 {
+	margin: 0 0 .7em 0; 
+	display: none;
 }
 
 .project img {
-	width: 25vh; 
-	height: 25vh;
-	border-radius: 5px;
-	margin-bottom: 1vh;
+	width: 12em; 
+	height: 12em;
+	border-radius: 1em;
+	float: left;
+}
+
+.project > div {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: space-between;
+}
+
+.project-description {
+	padding: 0 2em;
+	text-align: left;
+}
+
+.project-description > h3 {
+	padding: 0 0 .8em 0;
+	text-align: left;
+}
+
+.project-description > span {
+	font-size: 1.05em;
 }
 
 .project a {
@@ -66,20 +113,38 @@ section h1 {
 	color: #fff;
 }
 
+.project > div > div:nth-child(2) {
+	margin: 1em 0 0 0; 
+}
+
 a:hover {
 	color: #FA8072;
 }
 
 #a1 {
-	margin-right: 2vh;
+	margin-right: 1em;
 }
 
 footer {
 	background-color: #1F2A2C; 
 	height: 25vh;
-	margin-top: 15vh;
-	padding-top: 10vh;
 	color: #fff;
 }
+
+@media (max-width: 449px) {
+	.project-description {
+		display: none;
+	}
+
+	.project {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.project > h3 {
+		display: inline;
+	}
+}
+]
 
 
