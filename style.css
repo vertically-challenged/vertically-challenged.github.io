@@ -52,6 +52,42 @@ section h1 {
 	padding: 1.9em 0 1em 0;
 }
 
+.radio-bottom {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+input {
+	display: none;
+}
+
+label {
+	display: block;
+	width: 5em;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	opacity: .9;
+}
+
+label:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+input[value=cult]:checked ~ .radio-bottom label[for$=cult] {
+	color: #925d5d;
+}
+
+input[value=some-shit]:checked ~ .radio-bottom label[for$=some-shit] {
+	color: #925d5d;
+}
+
+input[value=layouts]:checked ~ .radio-bottom label[for$=layouts] {
+	color: #925d5d;
+}
+
 .projects{
 	display: flex;
 	flex-direction: column;
@@ -60,14 +96,25 @@ section h1 {
 }
 
 .project {
-	display: flex;
+	display: none;
 	background-color: #716F7C;
 	padding: 1em;
 	border-radius: 1.5em;
 	color: #fff;
 	margin: 2em 0;
-
 	width: 100%; 
+}
+
+input[value=cult]:checked ~ .projects .cult {
+	display: flex;
+}
+
+input[value=some-shit]:checked ~ .projects .some-shit {
+	display: flex;
+}
+
+input[value=layouts]:checked ~ .projects .layouts {
+	display: flex;
 }
 
 .project > h3 {
